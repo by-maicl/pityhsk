@@ -60,13 +60,30 @@ body {
     gap: 20px;
     font-size: 21px;
     color: white;
-    transition: all 0.20s ease 0s;
+}
+
+/* .header__menu-target {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+} */
+
+.header__menu-target {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.header__menu-target:hover {
+    border-bottom: 2px solid #8F8F8F;
 }
 
 .header__menu a:hover {
     color: #8F8F8F;
     transition: all 0.20s ease 0s;
 }
+
 
 .header__button {
     background: linear-gradient(180deg, rgba(115, 169, 173, 1) 0%, rgba(144, 200, 172, 1) 100%);

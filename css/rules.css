@@ -1,0 +1,28 @@
+.header__container {
+    background-color: #25272f;
+}
+
+.main__container-rules-list {
+    margin-top: 50px;
+    color: white;
+    font-size: 18px;
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main__container-rules-list li {
+    display: block;
+    margin: 15px 0;
+}
+
+.main__container-rules-list li::before {
+    counter-increment: item;
+    content: counters(item, ".") ". ";
+}
+
+.main__container-rules-list ol {
+    counter-reset: item;
+    margin-left: 20px;
+    padding-left: 0;
+}
