@@ -16,11 +16,24 @@
         <div class="header__container">
             <a href="index.html"><img src="img/logo.png" class="header__logo" alt="logo"></a>
             <div class="header__menu">
-                <a href="index.html">Головна</a>
-                <a href="#" class="header__menu-target">Правила</a>
+                <a href="index.html" class="header__menu-target">Головна</a>
+                <a href="#">Правила</a>
             </div>
-            <button type="button" class="header__button" onclick="self.location='index.html#start-play'">Почати
-                грати</button>
+            <button type="button" class="header__button" onclick="self.location='index.html#start-play'">Почати грати</button>
+        </div>
+
+        <div class="header__container header__container-mobile">
+            <a href="index.html"><img src="img/logo.png" class="header__logo header__logo-mobile" alt="logo"></a>
+            <button class="header__burger-btn" id="burgerOpen" onclick="openOrCloseBurgerMenu('open')"><i class="fa-solid fa-bars"></i></button>
+            <button class="header__burger-btn" id="burgerClose" onclick="openOrCloseBurgerMenu('close')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="header__mobile-menu" id="mobileMenu">
+            <div class="header__mobile-menu-container">
+                <a href="index.html">ГОЛОВНА</a>
+                <a href="rules.html">ПРАВИЛА</a>
+                <a href="index.html#start-play" onclick="openOrCloseBurgerMenu('close')">ПОЧАТИ ГРАТИ</a>
+            </div>
         </div>
     </header>
 
@@ -68,14 +81,13 @@
         <div class="footer_container section-container">
             <div class="footer__part">
                 <a href="index.html"><img src="img/logo.png" class="footer__logo" alt="logo"></a>
-                <a href="https://github.com/by-maicl" target="_blank">
-                    <p class="footer__part-maicl">© Hrab Mykhailo 2025</p>
-                </a>
+                <a href="https://github.com/by-maicl" target="_blank"><p class="footer__part-maicl">© Hrab Mykhailo 2025</p></a>
             </div>
             <div class="footer__part">
                 <h2>Ми в соціальних мережах</h2>
                 <a href="https://www.instagram.com/pityhsk_official" target="_blank">
-                    <img src="img/icon/instagram.png" class="footer__part-icon">
+                    <img src="img/icon/instagram.png"
+                        class="footer__part-icon">
                     <p class="footer__part-social-media">Instagram</p>
                 </a>
                 <a href="https://www.youtube.com/@pityxsk" target="_blank">
@@ -83,7 +95,7 @@
                     <p class="footer__part-social-media">Youtube</p>
                 </a>
             </div>
-            <div class="footer__part">
+            <div class="footer__part footer__part-last">
                 <h2>Зв'язатися з нами</h2>
                 <a href="mailto:pityhsk@gmail.com">
                     <p>pityhsk@gmail.com</p>

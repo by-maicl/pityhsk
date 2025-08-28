@@ -53,6 +53,36 @@ function smothScroll(scrollTo) {
     });
 }
 
+function openOrCloseBurgerMenu(operation) {
+    const btnOpen = document.getElementById('burgerOpen');
+    const btnClose = document.getElementById('burgerClose');
+    const menu = document.getElementById('mobileMenu');
+
+    switch (operation) {
+        case 'open':
+            btnOpen.style.display = 'none';
+            btnClose.style.display = 'block';
+
+            menu.style.height = '100vh';
+            menu.style.opacity = 1;
+
+            document.body.style.overflow = 'hidden';
+            break;
+
+        case 'close':
+            btnOpen.style.display = 'block';
+            btnClose.style.display = 'none';
+
+            menu.style.opacity = 0;
+            menu.style.height = '0';
+
+            document.body.style.overflow = 'auto';
+            break;
+        default:
+            break;
+    }
+}
+
 // checkInputValue('inputName');
 
 /* function createSliderButtons() {

@@ -20,6 +20,20 @@
             </div>
             <button type="button" class="header__button" onclick="smothScroll('start-play')">Почати грати</button>
         </div>
+
+        <div class="header__container header__container-mobile">
+            <a href="index.html"><img src="img/logo.png" class="header__logo header__logo-mobile" alt="logo"></a>
+            <button class="header__burger-btn" id="burgerOpen" onclick="openOrCloseBurgerMenu('open')"><i class="fa-solid fa-bars"></i></button>
+            <button class="header__burger-btn" id="burgerClose" onclick="openOrCloseBurgerMenu('close')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="header__mobile-menu" id="mobileMenu">
+            <div class="header__mobile-menu-container">
+                <a href="index.html">ГОЛОВНА</a>
+                <a href="rules.html">ПРАВИЛА</a>
+                <a href="#start-play" onclick="openOrCloseBurgerMenu('close')">ПОЧАТИ ГРАТИ</a>
+            </div>
+        </div>
     </header>
 
     <section class="start">
@@ -32,7 +46,7 @@
     </section>
 
     <section id="about-us">
-        <div class="section-container">
+        <div class="section-container about__container">
             <h1 class="section-header">
                 Більше про нас
             </h1>
@@ -145,7 +159,7 @@
                     <p class="footer__part-social-media">Youtube</p>
                 </a>
             </div>
-            <div class="footer__part">
+            <div class="footer__part footer__part-last">
                 <h2>Зв'язатися з нами</h2>
                 <a href="mailto:pityhsk@gmail.com">
                     <p>pityhsk@gmail.com</p>

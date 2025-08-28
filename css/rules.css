@@ -2,6 +2,11 @@
     background-color: #25272f;
 }
 
+.main__container {
+    min-height: 100vh;
+    height: auto;
+}
+
 .main__container-rules-list {
     margin-top: 50px;
     color: white;
@@ -25,4 +30,11 @@
     counter-reset: item;
     margin-left: 20px;
     padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .main__container-rules-list {
+        margin-top: 0;
+        font-size: 16px;
+    }
 }
