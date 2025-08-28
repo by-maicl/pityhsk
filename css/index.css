@@ -401,6 +401,26 @@ body {
     padding-top: 15px;
 }
 
+.play__error-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: 50px;
+    padding: 0 50px;
+    background-color: #e436360b;
+    border: 3px solid #E43636;
+    border-radius: 20px;
+    color: #E43636;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .footer_container {
     height: 200px;
     background-color: #15171B;

@@ -1,0 +1,35 @@
+.main__container {
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.section-header {
+    font-size: 36px;
+}
+
+.main__text {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+
+.header__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .main__container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

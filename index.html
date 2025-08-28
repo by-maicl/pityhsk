@@ -117,14 +117,14 @@
             </div>
             <div class="play__form">
                 <h3 class="play__form-header">Отже, трохи інформації про вас</h3>
-                <form action="">
+                <form id="formStartPlay">
                     <div class="play__form-item">
                         <input type="text" name="username" oninput="checkInputValue('inputName')" class="play__form-input" id="inputName" maxlength="50"
                             required>
                         <label for="inputName" id="inputNamePlh" class="play__form-input-placeholder">Напишіть своє ім'я</label>
                     </div>
                     <div class="play__form-item">
-                        <input type="text" name="discrod-tag" oninput="checkInputValue('inputTag')" class="play__form-input" id="inputTag" maxlength="50"
+                        <input type="text" name="discord-tag" oninput="checkInputValue('inputTag')" class="play__form-input" id="inputTag" maxlength="50"
                             required>
                         <label for="inputTag" id="inputTagPlh" class="play__form-input-placeholder">Напишіть свій діскорд-теґ</label>
                     </div>
@@ -137,6 +137,10 @@
                     </div>
                     <button type="submit" class="header__button">Надіслати</button>
                 </form>
+            </div>
+
+            <div class="play__error-form" id="errorWindow">
+                <p class="play__error-text">Сталась несподівана помилка, cпробуйте пізніше</p>
             </div>
         </div>
     </section>
@@ -170,6 +174,7 @@
 
     <script src="https://kit.fontawesome.com/20e02f2fbf.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 
