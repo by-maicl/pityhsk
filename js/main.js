@@ -3,31 +3,25 @@ const items = Array.from(gallery.children);
 const itemHeight = 370;
 const itemCount = items.length;
 
-// Клонуємо елементи: спочатку і в кінець
 items.forEach(img => {
-    gallery.appendChild(img.cloneNode(true)); // клон до низу
+    gallery.appendChild(img.cloneNode(true));
 });
 items.slice().reverse().forEach(img => {
-    gallery.insertBefore(img.cloneNode(true), gallery.firstChild); // клон вгору
+    gallery.insertBefore(img.cloneNode(true), gallery.firstChild);
 });
 
-// Встановлюємо початкову позицію (на перше оригінальне зображення)
 gallery.scrollTop = itemCount * itemHeight;
 
-// Фіксуємо нескінченну прокрутку
 gallery.addEventListener('scroll', () => {
-    // Якщо прокрутили занадто вниз (в клонований низ) — стрибок на оригінал
     if (gallery.scrollTop >= (itemCount * 2) * itemHeight) {
         gallery.scrollTop = itemCount * itemHeight;
     }
 
-    // Якщо прокрутили занадто вгору (в клонований верх) — стрибок на оригінал
     if (gallery.scrollTop <= 0) {
         gallery.scrollTop = itemCount * itemHeight;
     }
 });
 
-// Кнопки прокрутки
 document.querySelector('.gallery__button-down').addEventListener('click', () => {
     gallery.scrollBy({ top: itemHeight, behavior: 'smooth' });
 });
@@ -38,12 +32,14 @@ document.querySelector('.gallery__button-up').addEventListener('click', () => {
 
 function checkInputValue(elementId) {
     const input = document.getElementById(elementId);
-    const placeholder = document.getElementById(elementId + 'Plh')
+    const placeholder = document.getElementById(elementId + 'Plh');
 
     if (input.value.trim() !== '') {
-        placeholder.style.display = 'none';
+        placeholder.style.top = 0;
+        placeholder.style.fontSize = '14px';
     } else {
-        placeholder.style.display = 'inline';
+        placeholder.style.top = '50%';
+        placeholder.style.fontSize = '18px';
     }
 }
 

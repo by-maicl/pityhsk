@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     border: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -360,7 +361,7 @@ body {
     width: 500px;
     height: 60px;
     border-radius: 20px;
-    padding-left: 30px;
+    padding-left: 33px;
     font-size: 18px;
     border: none;
     font-family: "Montserrat", sans-serif;
@@ -377,13 +378,15 @@ body {
 
 .play__form-input-placeholder {
     position: absolute;
+    background-color: #32353F;
+    padding: 0 3px;
     color: #878686;
     font-size: 18px;
     left: 33px;
-    top: 50%;
+    top: 30px;
     transform: translate(0, -50%);
     cursor: text;
-    transition: all 0.1s ease;
+    transition: all 0.15s ease;
 }
 
 .play__form-textarea-placeholder {
@@ -391,7 +394,7 @@ body {
 }
 
 .play__form-input:focus+.play__form-input-placeholder {
-    top: 13px;
+    top: 0;
     font-size: 14px;
 }
 
@@ -654,6 +657,6 @@ body {
     }
 
     .play__form form {
-        gap: 10px;
+        gap: 15px;
     }
 }
