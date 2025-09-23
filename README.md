@@ -1,1 +1,1 @@
-Сайт-визитка майнкрафт сервера "Питухск"
+<h1>Minecraft server "Pityhsk" website</h1>
